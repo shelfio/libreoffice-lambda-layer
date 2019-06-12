@@ -10,7 +10,7 @@ Click on Layers and choose "Add a layer", and "Provide a layer version
 ARN" and enter the following ARN.
 
 ```
-arn:aws:lambda:us-east-1:764866452798:layer:libreoffice:3
+arn:aws:lambda:us-east-1:764866452798:layer:libreoffice:7
 ```
 
 Works well with [aws-lambda-libreoffice npm package](https://github.com/shelfio/aws-lambda-libreoffice)
@@ -19,7 +19,7 @@ Works well with [aws-lambda-libreoffice npm package](https://github.com/shelfio/
 
 | LibreOffice version | ARN                                                         |
 | ------------------- | ----------------------------------------------------------- |
-| 6.1.0.0.alpha0      | `arn:aws:lambda:us-east-1:764866452798:layer:libreoffice:6` |
+| 6.1.0.0.alpha0      | `arn:aws:lambda:us-east-1:764866452798:layer:libreoffice:7` |
 
 ## License
 
