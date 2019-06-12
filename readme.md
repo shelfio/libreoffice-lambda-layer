@@ -1,7 +1,6 @@
-# LibreOffice binary for AWS Lambda
+# LibreOffice for AWS Lambda as a layer
 
-A [layer](https://aws.amazon.com/about-aws/whats-new/2018/11/aws-lambda-now-supports-custom-runtimes-and-layers/)
-for AWS Lambda that allows your functions to use LibreOffice.
+> 85 MB LibreOffice to fit inside AWS Lambda Layer compressed with Brotli 
 
 ## Getting Started
 
@@ -14,11 +13,13 @@ ARN" and enter the following ARN.
 arn:aws:lambda:us-east-1:764866452798:layer:libreoffice:3
 ```
 
+Works well with [aws-lambda-libreoffice npm package](https://github.com/shelfio/aws-lambda-libreoffice)
+
 ## Version ARNs
 
 | LibreOffice version | ARN                                                         |
 | ------------------- | ----------------------------------------------------------- |
-| 6.1.0.0.alpha0      | `arn:aws:lambda:us-east-1:764866452798:layer:libreoffice:3` |
+| 6.1.0.0.alpha0      | `arn:aws:lambda:us-east-1:764866452798:layer:libreoffice:6` |
 
 ## License
 
