@@ -19,3 +19,7 @@ arn:aws:lambda:us-east-1:764866452798:layer:libreoffice:3
 | LibreOffice version | ARN                                                         |
 | ------------------- | ----------------------------------------------------------- |
 | 6.1.0.0.alpha0      | `arn:aws:lambda:us-east-1:764866452798:layer:libreoffice:3` |
+
+## License
+
+MIT © [Shelf](https://shelf.io)
