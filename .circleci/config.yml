@@ -12,18 +12,4 @@ jobs:
     executor: awscli
     steps:
       - checkout
-
-      - restore_cache:
-          keys:
-            - v1-dependencies-{{ checksum "package.json" }}
-            - v1-dependencies-
-
-      - run: yarn
-
-      - save_cache:
-          paths:
-            - node_modules
-            - yarn.lock
-          key: v1-dependencies-{{ checksum "package.json" }}
-
-      - run: yarn test
+      - run: ./publish.sh
