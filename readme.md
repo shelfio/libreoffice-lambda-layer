@@ -1,6 +1,8 @@
 # LibreOffice for AWS Lambda as a layer
 
-> 85 MB LibreOffice to fit inside AWS Lambda Layer compressed with Brotli 
+> 85 MB LibreOffice to fit inside AWS Lambda Layer compressed with Brotli
+
+Based on the [serverless-libreoffice](https://github.com/vladgolubev/serverless-libreoffice) project.
 
 ## Getting Started
 
