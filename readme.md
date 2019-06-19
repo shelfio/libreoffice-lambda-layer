@@ -15,19 +15,15 @@ ARN" and enter the following ARN.
 arn:aws:lambda:us-east-1:764866452798:layer:libreoffice:8
 ```
 
-Or for the `eu-west-1` region:
-
-```
-arn:aws:lambda:eu-west-1:764866452798:layer:libreoffice:1
-```
+See the table below for other supported regions.
 
 Works well with [aws-lambda-libreoffice npm package](https://github.com/shelfio/aws-lambda-libreoffice)
 
 ## Version ARNs
 
-| LibreOffice version | ARN                                                                                                                         |
-| ------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| 6.1.0.0.alpha0      | `arn:aws:lambda:us-east-1:764866452798:layer:libreoffice:8` and `arn:aws:lambda:eu-west-1:764866452798:layer:libreoffice:1` |
+| LibreOffice version | ARN                                                                                                                                                                                            |
+| ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 6.1.0.0.alpha0      | `arn:aws:lambda:us-east-1:764866452798:layer:libreoffice:8` and `arn:aws:lambda:eu-west-1:764866452798:layer:libreoffice:1` and `arn:aws:lambda:eu-central-1:764866452798:layer:libreoffice:1` |
 
 ## License
 
