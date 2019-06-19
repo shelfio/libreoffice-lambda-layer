@@ -27,7 +27,7 @@ workflows:
     jobs:
       - publish:
           context: libreoffice-lambda-layer
-          filters:
+#          filters:
 #            branches:
 #              ignore: /.*/
 #            tags:
