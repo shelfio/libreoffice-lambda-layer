@@ -23,7 +23,7 @@ Works well with [aws-lambda-libreoffice npm package](https://github.com/shelfio/
 
 | LibreOffice version | ARN                                                                                                                                                                                            |
 | ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 6.1.0.0.alpha0      | `arn:aws:lambda:us-east-1:764866452798:layer:libreoffice:8` and `arn:aws:lambda:eu-west-1:764866452798:layer:libreoffice:1` and `arn:aws:lambda:eu-central-1:764866452798:layer:libreoffice:1` |
+| 6.1.0.0.alpha0      | `arn:aws:lambda:us-east-1:764866452798:layer:libreoffice:8` and `arn:aws:lambda:eu-west-1:764866452798:layer:libreoffice:1` and `arn:aws:lambda:eu-central-1:764866452798:layer:libreoffice:1` and `arn:aws:lambda:us-west-2:764866452798:layer:libreoffice:1` |
 
 ## License
 
