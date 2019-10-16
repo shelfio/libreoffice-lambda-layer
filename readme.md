@@ -29,6 +29,8 @@ Works well with [aws-lambda-libreoffice npm package](https://github.com/shelfio/
 * `arn:aws:lambda:us-west-2:764866452798:layer:libreoffice:1`
 * `arn:aws:lambda:us-east-2:764866452798:layer:libreoffice:1`
 * `arn:aws:lambda:ap-southeast-2:764866452798:layer:libreoffice:1`
+* `arn:aws:lambda:eu-west-2:764866452798:layer:libreoffice:1`
+* `arn:aws:lambda:ap-southeast-1:764866452798:layer:libreoffice:1`
 
 ## License
 
