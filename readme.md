@@ -23,6 +23,10 @@ Works well with [aws-lambda-libreoffice npm package](https://github.com/shelfio/
 
 This layer contains `lo.tar.gz` file which is LibreOfficee v6.1.0.0.alpha (https://github.com/vladgolubev/serverless-libreoffice/releases/tag/v6.1.0.0.alpha0).
 
+## Where is LibreOffice inside of Lambda?
+
+It is at `/opt/lo.tar.gz`.
+
 ## Version ARNs
 
 ### LibreOffice 6.1.0.0.alpha0
