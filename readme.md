@@ -19,6 +19,10 @@ See the table below for other supported regions.
 
 Works well with [aws-lambda-libreoffice npm package](https://github.com/shelfio/aws-lambda-libreoffice)
 
+## What does this layer contains?
+
+This layer contains `lo.tar.gz` file which is LibreOfficee v6.1.0.0.alpha (https://github.com/vladgolubev/serverless-libreoffice/releases/tag/v6.1.0.0.alpha0).
+
 ## Version ARNs
 
 ### LibreOffice 6.1.0.0.alpha0
