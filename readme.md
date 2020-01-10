@@ -18,9 +18,9 @@ Works well with [aws-lambda-libreoffice npm package](https://github.com/shelfio/
 
 ## What's inside this layer?
 
-`libreoffice-brotli` layer contains `lo.tar.br` file which is LibreOffice v6.4.0.1 (https://github.com/vladgolubev/serverless-libreoffice/releases/tag/v6.4.0.1). Node.js has native Brotli unpacking support since version 10 so it's easy to unpack this file natively. Alternatively, you can use [aws-lambda-libreoffice npm package](https://github.com/shelfio/aws-lambda-libreoffice) to simplify this task.
+`libreoffice-brotli` layer contains `lo.tar.br` file which is [LibreOffice v6.4.0.1](https://github.com/vladgolubev/serverless-libreoffice/releases/tag/v6.4.0.1). Node.js has native Brotli unpacking support since version 10 so it's easy to unpack this file natively. Alternatively, you can use [aws-lambda-libreoffice npm package](https://github.com/shelfio/aws-lambda-libreoffice) to simplify this task.
 
-`libreoffice-gzip` layer contains `lo.tar.gz` file which is LibreOffice v6.4.0.1 (https://github.com/vladgolubev/serverless-libreoffice/releases/tag/v6.4.0.1).
+`libreoffice-gzip` layer contains `lo.tar.gz` file which is [LibreOffice v6.4.0.1](https://github.com/vladgolubev/serverless-libreoffice/releases/tag/v6.4.0.1).
 
 ## How do I use this layer to launch LibreOffice?
 
