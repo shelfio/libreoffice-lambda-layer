@@ -9,7 +9,7 @@ Based on the [serverless-libreoffice](https://github.com/vladgolubev/serverless-
 Click on Layers and choose "Add a layer", and "Provide a layer version ARN" and enter the following ARN.
 
 ```
-arn:aws:lambda:us-east-1:764866452798:layer:libreoffice:9
+arn:aws:lambda:us-east-1:764866452798:layer:libreoffice-brotli:1
 ```
 
 See the table below for the list of supported regions and runtimes.
@@ -28,7 +28,7 @@ If you don't use [aws-lambda-libreoffice npm package](https://github.com/shelfio
 
 1. This layer just adds `/opt/lo.tar.br` or `/opt/lo.tar.gz` file to your Lambda runtime
 2. Unpack `/opt/lo.tar.br` or `/opt/lo.tar.gz` file during Lambda execution into `/tmp` folder which has 512 MB of free space. Make sure to do this OUTSIDE function handler code.
-This is an expensive task, so better to make it once on a warm start.
+   This is an expensive task, so better to make it once on a warm start.
 3. LibreOffice binary will be located available at `/opt/instdir/program/soffice.bin`
 4. Check out `/test/index.js` for CLI arguments needed to run LibreOffice to convert a `.txt` file to `.pdf` for more details
 
@@ -43,18 +43,18 @@ Works with the following [AWS Lambda runtimes](https://docs.aws.amazon.com/lambd
 - python3.8
 - java11
 
-| AWS Region     | LibreOffice Version | Layer ARN                                                        |
-| -------------- | ------------------- | ---------------------------------------------------------------- |
-| us-east-1      | 6.4.0.1             | `arn:aws:lambda:us-east-1:764866452798:layer:libreoffice:9`      |
-| eu-west-1      | 6.4.0.1             | `arn:aws:lambda:eu-west-1:764866452798:layer:libreoffice:2`      |
-| eu-central-1   | 6.4.0.1             | `arn:aws:lambda:eu-central-1:764866452798:layer:libreoffice:2`   |
-| us-west-2      | 6.4.0.1             | `arn:aws:lambda:us-west-2:764866452798:layer:libreoffice:2`      |
-| us-east-2      | 6.4.0.1             | `arn:aws:lambda:us-east-2:764866452798:layer:libreoffice:2`      |
-| ap-southeast-2 | 6.4.0.1             | `arn:aws:lambda:ap-southeast-2:764866452798:layer:libreoffice:2` |
-| eu-west-2      | 6.4.0.1             | `arn:aws:lambda:eu-west-2:764866452798:layer:libreoffice:2`      |
-| ap-southeast-1 | 6.4.0.1             | `arn:aws:lambda:ap-southeast-1:764866452798:layer:libreoffice:2` |
-| ap-south-1     | 6.4.0.1             | `arn:aws:lambda:ap-south-1:764866452798:layer:libreoffice:2`     |
-| ca-central-1   | 6.4.0.1             | `arn:aws:lambda:ca-central-1:764866452798:layer:libreoffice:1`   |
+| AWS Region     | LibreOffice Version | Layer ARN (brotli)                                                      | Layer ARN (gzip)                                                      |
+| -------------- | ------------------- | ----------------------------------------------------------------------- | --------------------------------------------------------------------- |
+| us-east-1      | 6.4.0.1             | `arn:aws:lambda:us-east-1:764866452798:layer:libreoffice-brotli:1`      | `arn:aws:lambda:us-east-1:764866452798:layer:libreoffice-gzip:1`      |
+| eu-west-1      | 6.4.0.1             | `arn:aws:lambda:eu-west-1:764866452798:layer:libreoffice-brotli:1`      | `arn:aws:lambda:eu-west-1:764866452798:layer:libreoffice-gzip:1`      |
+| eu-central-1   | 6.4.0.1             | `arn:aws:lambda:eu-central-1:764866452798:layer:libreoffice-brotli:1`   | `arn:aws:lambda:eu-central-1:764866452798:layer:libreoffice-gzip:1`   |
+| us-west-2      | 6.4.0.1             | `arn:aws:lambda:us-west-2:764866452798:layer:libreoffice-brotli:1`      | `arn:aws:lambda:us-west-2:764866452798:layer:libreoffice-gzip:1`      |
+| us-east-2      | 6.4.0.1             | `arn:aws:lambda:us-east-2:764866452798:layer:libreoffice-brotli:1`      | `arn:aws:lambda:us-east-2:764866452798:layer:libreoffice-gzip:1`      |
+| ap-southeast-2 | 6.4.0.1             | `arn:aws:lambda:ap-southeast-2:764866452798:layer:libreoffice-brotli:1` | `arn:aws:lambda:ap-southeast-2:764866452798:layer:libreoffice-gzip:1` |
+| eu-west-2      | 6.4.0.1             | `arn:aws:lambda:eu-west-2:764866452798:layer:libreoffice-brotli:1`      | `arn:aws:lambda:eu-west-2:764866452798:layer:libreoffice-gzip:1`      |
+| ap-southeast-1 | 6.4.0.1             | `arn:aws:lambda:ap-southeast-1:764866452798:layer:libreoffice-brotli:1` | `arn:aws:lambda:ap-southeast-1:764866452798:layer:libreoffice-gzip:1` |
+| ap-south-1     | 6.4.0.1             | `arn:aws:lambda:ap-south-1:764866452798:layer:libreoffice-brotli:1`     | `arn:aws:lambda:ap-south-1:764866452798:layer:libreoffice-gzip:1`     |
+| ca-central-1   | 6.4.0.1             | `arn:aws:lambda:ca-central-1:764866452798:layer:libreoffice-brotli:1`   | `arn:aws:lambda:ca-central-1:764866452798:layer:libreoffice-gzip:1`   |
 
 ### LibreOffice 6.1.0.0.alpha0 (Amazon Linux 1)
 
@@ -84,4 +84,3 @@ Works with the following [AWS Lambda runtimes](https://docs.aws.amazon.com/lambd
 ## License
 
 MIT © [Shelf](https://shelf.io)
-
