@@ -1,31 +1,36 @@
 # LibreOffice for AWS Lambda as a layer
 
-> 95 MB LibreOffice to fit inside AWS Lambda Layer compressed with Brotli
+> 95 MB LibreOffice to fit inside AWS Lambda Layer compressed with Brotli or gzip
 
 Based on the [serverless-libreoffice](https://github.com/vladgolubev/serverless-libreoffice) project.
 
 ## Getting Started
 
-You can add this layer to any Lambda function you want – no matter what runtime
-
-Click on Layers and choose "Add a layer", and "Provide a layer version
-ARN" and enter the following ARN.
+Click on Layers and choose "Add a layer", and "Provide a layer version ARN" and enter the following ARN.
 
 ```
 arn:aws:lambda:us-east-1:764866452798:layer:libreoffice:9
 ```
 
-See the table below for other supported regions.
+See the table below for the list of supported regions and runtimes.
 
 Works well with [aws-lambda-libreoffice npm package](https://github.com/shelfio/aws-lambda-libreoffice)
 
-## What does this layer contain?
+## What's inside this layer?
 
-This layer contains `lo.tar.br` file which is LibreOfficee v6.4.0.1 (https://github.com/vladgolubev/serverless-libreoffice/releases/tag/v6.4.0.1).
+`libreoffice-brotli` layer contains `lo.tar.br` file which is LibreOffice v6.4.0.1 (https://github.com/vladgolubev/serverless-libreoffice/releases/tag/v6.4.0.1). Node.js has native Brotli unpacking support since version 10 so it's easy to unpack this file natively. Alternatively, you can use [aws-lambda-libreoffice npm package](https://github.com/shelfio/aws-lambda-libreoffice) to simplify this task.
 
-## Where is LibreOffice inside of Lambda?
+`libreoffice-gzip` layer contains `lo.tar.gz` file which is LibreOffice v6.4.0.1 (https://github.com/vladgolubev/serverless-libreoffice/releases/tag/v6.4.0.1).
 
-It is at `/opt/lo.tar.br`.
+## How do I use this layer to launch LibreOffice?
+
+If you don't use [aws-lambda-libreoffice npm package](https://github.com/shelfio/aws-lambda-libreoffice), then these steps are roughly what you need to do.
+
+1. This layer just adds `/opt/lo.tar.br` or `/opt/lo.tar.gz` file to your Lambda runtime
+2. Unpack `/opt/lo.tar.br` or `/opt/lo.tar.gz` file during Lambda execution into `/tmp` folder which has 512 MB of free space. Make sure to do this OUTSIDE function handler code.
+This is an expensive task, so better to make it once on a warm start.
+3. LibreOffice binary will be located available at `/opt/instdir/program/soffice.bin`
+4. Check out `/test/index.js` for CLI arguments needed to run LibreOffice to convert a `.txt` file to `.pdf` for more details
 
 ## Version ARNs
 
@@ -79,3 +84,4 @@ Works with the following [AWS Lambda runtimes](https://docs.aws.amazon.com/lambd
 ## License
 
 MIT © [Shelf](https://shelf.io)
+
