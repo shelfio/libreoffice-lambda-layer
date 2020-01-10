@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-LO_VERSION=6.1.0.0.alpha0
+LO_VERSION=6.4.0.1
 LAYER_NAME='libreoffice'
 
 aws s3 cp ./layer.zip s3://shelf-libreoffice-lambda-layer-"$TARGET_REGION"/layer.zip

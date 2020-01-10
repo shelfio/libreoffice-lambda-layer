@@ -9,6 +9,10 @@ tar -xvf lo.tar
 
 cd ../test
 
-docker run --rm -v "$PWD":/var/task -v "$PWD"/../layer:/opt lambci/lambda:nodejs8.10
+docker run --rm \
+  -v "$PWD":/var/task \
+  -v "$PWD"/../layer:/opt \
+  lambci/lambda:nodejs12.x \
+  index.handler
 
 rm -rf layer

@@ -82,6 +82,13 @@ jobs:
     steps:
       - publish
 
+  ca_central_1:
+    executor: aws-cli/default
+    environment:
+      TARGET_REGION: ca-central-1
+    steps:
+      - publish
+
 workflows:
   version: 2
   publish:
@@ -143,6 +150,13 @@ workflows:
                 - master
 
       - us_west_2:
+          context: libreoffice-lambda-layer
+          filters:
+            branches:
+              only:
+                - master
+
+      - ca_central_1:
           context: libreoffice-lambda-layer
           filters:
             branches:
