@@ -38,16 +38,18 @@ Works with the following [AWS Lambda runtimes](https://docs.aws.amazon.com/lambd
 - python3.8
 - java11
 
-* `arn:aws:lambda:us-east-1:764866452798:layer:libreoffice:9`
-* `arn:aws:lambda:eu-west-1:764866452798:layer:libreoffice:2`
-* `arn:aws:lambda:eu-central-1:764866452798:layer:libreoffice:2`
-* `arn:aws:lambda:us-west-2:764866452798:layer:libreoffice:2`
-* `arn:aws:lambda:us-east-2:764866452798:layer:libreoffice:2`
-* `arn:aws:lambda:ap-southeast-2:764866452798:layer:libreoffice:2`
-* `arn:aws:lambda:eu-west-2:764866452798:layer:libreoffice:2`
-* `arn:aws:lambda:ap-southeast-1:764866452798:layer:libreoffice:2`
-* `arn:aws:lambda:ap-south-1:764866452798:layer:libreoffice:2`
-* `arn:aws:lambda:ca-central-1:764866452798:layer:libreoffice:1`
+| AWS Region     | LibreOffice Version | Layer ARN                                                        |
+| -------------- | ------------------- | ---------------------------------------------------------------- |
+| us-east-1      | 6.4.0.1             | `arn:aws:lambda:us-east-1:764866452798:layer:libreoffice:9`      |
+| eu-west-1      | 6.4.0.1             | `arn:aws:lambda:eu-west-1:764866452798:layer:libreoffice:2`      |
+| eu-central-1   | 6.4.0.1             | `arn:aws:lambda:eu-central-1:764866452798:layer:libreoffice:2`   |
+| us-west-2      | 6.4.0.1             | `arn:aws:lambda:us-west-2:764866452798:layer:libreoffice:2`      |
+| us-east-2      | 6.4.0.1             | `arn:aws:lambda:us-east-2:764866452798:layer:libreoffice:2`      |
+| ap-southeast-2 | 6.4.0.1             | `arn:aws:lambda:ap-southeast-2:764866452798:layer:libreoffice:2` |
+| eu-west-2      | 6.4.0.1             | `arn:aws:lambda:eu-west-2:764866452798:layer:libreoffice:2`      |
+| ap-southeast-1 | 6.4.0.1             | `arn:aws:lambda:ap-southeast-1:764866452798:layer:libreoffice:2` |
+| ap-south-1     | 6.4.0.1             | `arn:aws:lambda:ap-south-1:764866452798:layer:libreoffice:2`     |
+| ca-central-1   | 6.4.0.1             | `arn:aws:lambda:ca-central-1:764866452798:layer:libreoffice:1`   |
 
 ### LibreOffice 6.1.0.0.alpha0 (Amazon Linux 1)
 
@@ -62,15 +64,17 @@ Works with the following [AWS Lambda runtimes](https://docs.aws.amazon.com/lambd
 - go1.x
 - dotnetcore2.1
 
-* `arn:aws:lambda:us-east-1:764866452798:layer:libreoffice:8`
-* `arn:aws:lambda:eu-west-1:764866452798:layer:libreoffice:1`
-* `arn:aws:lambda:eu-central-1:764866452798:layer:libreoffice:1`
-* `arn:aws:lambda:us-west-2:764866452798:layer:libreoffice:1`
-* `arn:aws:lambda:us-east-2:764866452798:layer:libreoffice:1`
-* `arn:aws:lambda:ap-southeast-2:764866452798:layer:libreoffice:1`
-* `arn:aws:lambda:eu-west-2:764866452798:layer:libreoffice:1`
-* `arn:aws:lambda:ap-southeast-1:764866452798:layer:libreoffice:1`
-* `arn:aws:lambda:ap-south-1:764866452798:layer:libreoffice:1`
+| AWS Region     | LibreOffice Version | Layer ARN                                                        |
+| -------------- | ------------------- | ---------------------------------------------------------------- |
+| us-east-1      | 6.1.0.0.alpha0      | `arn:aws:lambda:us-east-1:764866452798:layer:libreoffice:8`      |
+| eu-west-1      | 6.1.0.0.alpha0      | `arn:aws:lambda:eu-west-1:764866452798:layer:libreoffice:1`      |
+| eu-central-1   | 6.1.0.0.alpha0      | `arn:aws:lambda:eu-central-1:764866452798:layer:libreoffice:1`   |
+| us-west-2      | 6.1.0.0.alpha0      | `arn:aws:lambda:us-west-2:764866452798:layer:libreoffice:1`      |
+| us-east-2      | 6.1.0.0.alpha0      | `arn:aws:lambda:us-east-2:764866452798:layer:libreoffice:1`      |
+| ap-southeast-2 | 6.1.0.0.alpha0      | `arn:aws:lambda:ap-southeast-2:764866452798:layer:libreoffice:1` |
+| eu-west-2      | 6.1.0.0.alpha0      | `arn:aws:lambda:eu-west-2:764866452798:layer:libreoffice:1`      |
+| ap-southeast-1 | 6.1.0.0.alpha0      | `arn:aws:lambda:ap-southeast-1:764866452798:layer:libreoffice:1` |
+| ap-south-1     | 6.1.0.0.alpha0      | `arn:aws:lambda:ap-south-1:764866452798:layer:libreoffice:1`     |
 
 ## License
 
