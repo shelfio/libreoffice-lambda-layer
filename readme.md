@@ -29,7 +29,14 @@ It is at `/opt/lo.tar.br`.
 
 ## Version ARNs
 
-### LibreOffice v6.4.0.1
+### LibreOffice v6.4.0.1 (Amazon Linux 2)
+
+Works with the following [AWS Lambda runtimes](https://docs.aws.amazon.com/lambda/latest/dg/lambda-runtimes.html) which run on Amazon Linux 2:
+
+- nodejs12.x
+- nodejs10.x
+- python3.8
+- java11
 
 * `arn:aws:lambda:us-east-1:764866452798:layer:libreoffice:9`
 * `arn:aws:lambda:eu-west-1:764866452798:layer:libreoffice:2`
@@ -42,7 +49,18 @@ It is at `/opt/lo.tar.br`.
 * `arn:aws:lambda:ap-south-1:764866452798:layer:libreoffice:2`
 * `arn:aws:lambda:ca-central-1:764866452798:layer:libreoffice:1`
 
-### LibreOffice 6.1.0.0.alpha0
+### LibreOffice 6.1.0.0.alpha0 (Amazon Linux 1)
+
+Works with the following [AWS Lambda runtimes](https://docs.aws.amazon.com/lambda/latest/dg/lambda-runtimes.html) which run on Amazon Linux 2:
+
+- nodejs8.10
+- python3.7
+- python3.6
+- python2.7
+- ruby2.5
+- java8
+- go1.x
+- dotnetcore2.1
 
 * `arn:aws:lambda:us-east-1:764866452798:layer:libreoffice:8`
 * `arn:aws:lambda:eu-west-1:764866452798:layer:libreoffice:1`
