@@ -2,7 +2,7 @@
 
 LO_VERSION=6.4.0.1
 
-aws s3 cp ./"$LAYER_FILENAME" s3://shelf-libreoffice-lambda-layer-"$TARGET_REGION"/"$LAYER_FILENAME"
+aws s3 cp ./"$LAYER_FILENAME" s3://shelf-lambda-layers-"$TARGET_REGION"/"$LAYER_FILENAME"
 
 aws lambda add-layer-version-permission \
   --region "$TARGET_REGION" \
@@ -16,5 +16,5 @@ aws lambda add-layer-version-permission \
     --description "${LAYER_NAME} ${LO_VERSION} binary" \
     --query Version \
     --output text \
-    --content S3Bucket=shelf-libreoffice-lambda-layer-"$TARGET_REGION",S3Key="$LAYER_FILENAME"
+    --content S3Bucket=shelf-lambda-layers-"$TARGET_REGION",S3Key="$LAYER_FILENAME"
     )"
