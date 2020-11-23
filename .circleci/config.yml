@@ -16,8 +16,8 @@ commands:
 
             git lfs install
             git lfs pull
-      - run: LAYER_NAME=libreoffice-brotli LAYER_FILENAME=libreoffice.tar.br.zip ./publish.sh
-      - run: LAYER_NAME=libreoffice-gzip LAYER_FILENAME=libreoffice.tar.gz.zip ./publish.sh
+      - run: LAYER_NAME=libreoffice-brotli LAYER_FILENAME=layer.tar.br.zip ./publish.sh
+      - run: LAYER_NAME=libreoffice-gzip LAYER_FILENAME=layer.tar.gz.zip ./publish.sh
 
 jobs:
   ap_south_1:
