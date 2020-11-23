@@ -2,7 +2,9 @@
 
 LO_VERSION=6.4.0.1
 
-aws s3 cp ./"$LAYER_FILENAME" s3://shelf-lambda-layers-"$TARGET_REGION"/"$LAYER_FILENAME"
+aws s3 cp \
+  /home/circleci/project/"$LAYER_FILENAME" \
+  s3://shelf-lambda-layers-"$TARGET_REGION"/"$LAYER_FILENAME"
 
 aws lambda add-layer-version-permission \
   --region "$TARGET_REGION" \
