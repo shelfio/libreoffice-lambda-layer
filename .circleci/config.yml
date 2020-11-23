@@ -90,6 +90,13 @@ jobs:
     steps:
       - publish
 
+  sa_east_1:
+    executor: aws-cli/default
+    environment:
+      TARGET_REGION: sa-east-1
+    steps:
+      - publish
+
 workflows:
   version: 2
   publish:
@@ -158,6 +165,13 @@ workflows:
                 - master
 
       - ca_central_1:
+          context: public-lambda-layers
+          filters:
+            branches:
+              only:
+                - master
+
+      - sa_east_1:
           context: public-lambda-layers
           filters:
             branches:
