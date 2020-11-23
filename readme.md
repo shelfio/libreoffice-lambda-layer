@@ -55,6 +55,7 @@ Works with the following [AWS Lambda runtimes](https://docs.aws.amazon.com/lambd
 | ap-southeast-1 | `arn:aws:lambda:ap-southeast-1:764866452798:layer:libreoffice-brotli:1` or <br> `arn:aws:lambda:ap-southeast-1:764866452798:layer:libreoffice-gzip:1` |
 | ap-south-1     | `arn:aws:lambda:ap-south-1:764866452798:layer:libreoffice-brotli:1` or <br> `arn:aws:lambda:ap-south-1:764866452798:layer:libreoffice-gzip:1`         |
 | ca-central-1   | `arn:aws:lambda:ca-central-1:764866452798:layer:libreoffice-brotli:1` or <br> `arn:aws:lambda:ca-central-1:764866452798:layer:libreoffice-gzip:1`     |
+| sa-east-1      | `arn:aws:lambda:sa-east-1:764866452798:layer:libreoffice-brotli:1` or <br> `arn:aws:lambda:sa-east-1:764866452798:layer:libreoffice-gzip:1`           |
 
 ### LibreOffice 6.1.0.0.alpha0 (Amazon Linux 1)
 
