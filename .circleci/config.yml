@@ -62,6 +62,13 @@ jobs:
     steps:
       - publish
 
+  eu_west_3:
+    executor: aws-cli/default
+    environment:
+      TARGET_REGION: eu-west-3
+    steps:
+      - publish
+
   us_east_1:
     executor: aws-cli/default
     environment:

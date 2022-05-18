@@ -38,13 +38,15 @@ If you don't use [aws-lambda-libreoffice npm package](https://github.com/shelfio
 
 Works with the following [AWS Lambda runtimes](https://docs.aws.amazon.com/lambda/latest/dg/lambda-runtimes.html) which run on Amazon Linux 2:
 
+- nodejs16.x
+- nodejs14.x
 - nodejs12.x
 - nodejs10.x
 - python3.8
 - java11
 
 | AWS Region     | Layer ARN (brotli)                                                                                                                                    |
-| -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+|----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
 | us-east-1      | `arn:aws:lambda:us-east-1:764866452798:layer:libreoffice-brotli:1` or <br> `arn:aws:lambda:us-east-1:764866452798:layer:libreoffice-gzip:1`           |
 | eu-west-1      | `arn:aws:lambda:eu-west-1:764866452798:layer:libreoffice-brotli:1` or <br> `arn:aws:lambda:eu-west-1:764866452798:layer:libreoffice-gzip:1`           |
 | eu-central-1   | `arn:aws:lambda:eu-central-1:764866452798:layer:libreoffice-brotli:1` or <br> `arn:aws:lambda:eu-central-1:764866452798:layer:libreoffice-gzip:1`     |
@@ -52,6 +54,7 @@ Works with the following [AWS Lambda runtimes](https://docs.aws.amazon.com/lambd
 | us-east-2      | `arn:aws:lambda:us-east-2:764866452798:layer:libreoffice-brotli:1` or <br> `arn:aws:lambda:us-east-2:764866452798:layer:libreoffice-gzip:1`           |
 | ap-southeast-2 | `arn:aws:lambda:ap-southeast-2:764866452798:layer:libreoffice-brotli:1` or <br> `arn:aws:lambda:ap-southeast-2:764866452798:layer:libreoffice-gzip:1` |
 | eu-west-2      | `arn:aws:lambda:eu-west-2:764866452798:layer:libreoffice-brotli:1` or <br> `arn:aws:lambda:eu-west-2:764866452798:layer:libreoffice-gzip:1`           |
+| eu-west-3      | `arn:aws:lambda:eu-west-3:764866452798:layer:libreoffice-brotli:1` or <br> `arn:aws:lambda:eu-west-3:764866452798:layer:libreoffice-gzip:1`           |
 | ap-southeast-1 | `arn:aws:lambda:ap-southeast-1:764866452798:layer:libreoffice-brotli:1` or <br> `arn:aws:lambda:ap-southeast-1:764866452798:layer:libreoffice-gzip:1` |
 | ap-south-1     | `arn:aws:lambda:ap-south-1:764866452798:layer:libreoffice-brotli:1` or <br> `arn:aws:lambda:ap-south-1:764866452798:layer:libreoffice-gzip:1`         |
 | ca-central-1   | `arn:aws:lambda:ca-central-1:764866452798:layer:libreoffice-brotli:1` or <br> `arn:aws:lambda:ca-central-1:764866452798:layer:libreoffice-gzip:1`     |
