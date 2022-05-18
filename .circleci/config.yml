@@ -150,6 +150,13 @@ workflows:
               only:
                 - master
 
+      - eu_west_3:
+          context: public-lambda-layers
+          filters:
+            branches:
+              only:
+                - master
+
       - us_east_1:
           context: public-lambda-layers
           filters:
