@@ -41,6 +41,13 @@ jobs:
     steps:
       - publish
 
+  ap_northeast_1:
+    executor: aws-cli/default
+    environment:
+      TARGET_REGION: ap-northeast-1
+    steps:
+      - publish
+
   eu_central_1:
     executor: aws-cli/default
     environment:
@@ -123,6 +130,13 @@ workflows:
                 - master
 
       - ap_southeast_2:
+          context: public-lambda-layers
+          filters:
+            branches:
+              only:
+                - master
+
+      - ap_northeast_1:
           context: public-lambda-layers
           filters:
             branches:
