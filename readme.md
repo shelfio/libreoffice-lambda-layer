@@ -1,5 +1,7 @@
 # LibreOffice for AWS Lambda as a layer
 
+> **Deprecated:** This project is no longer maintained. Use [libreoffice-lambda-base-image](https://github.com/shelfio/libreoffice-lambda-base-image) for current LibreOffice AWS Lambda deployments.
+
 > 95 MB LibreOffice to fit inside AWS Lambda Layer compressed with Brotli or gzip
 
 Based on the [serverless-libreoffice](https://github.com/vladgolubev/serverless-libreoffice) project.
